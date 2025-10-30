@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem de Marcação - Aula Eventos - Eventos de Mouse</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mouse.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Evento</th>
+                <th>Quando é disparado</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>onclick</code></td>
+                <td>Quando o usuário clica sobre o elemento</td>
+                <td>Botão que mostra uma mensagem</td>
+            </tr>
+            <tr>
+                <td><code>ondblclick</code></td>
+                <td>Quando o usuário usa o clique duplo do mouse</td>
+                <td>Ativar/desativar algo</td>
+            </tr>
+            <tr>
+                <td><code>onmouseover</code></td>
+                <td>Quando o pointeiro passa em cima do elemento</td>
+                <td>Destacar um botão</td>
+            </tr>
+            <tr>
+                <td><code>onmousein</code></td>
+                <td>Quando o ponteiro do mouse entra no elemento</td>
+                <td>Destacar um botão</td>
+            </tr>
+            <tr>
+                <td><code>onmouseout</code></td>
+                <td>Quando o ponteiro do mouse sai do elemento</td>
+                <td>Retirar destaque</td>
+            </tr>
+            <tr>
+                <td><code>onmousedown</code></td>
+                <td>Quando o botão do mouse é pressionado</td>
+                <td>Iniciar um arraste de elemento</td>
+            </tr>
+            <tr>
+                <td><code>onmouseup</code></td>
+                <td>Quando o botão do mouse é solto</td>
+                <td>Fim de um arraste</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="exemplos">
+        <div class="onclick">
+            <p>Evento <code>onclick</code></p>
+            <p>Clique para ver o que acontece</p>
+            <button onclick="alert('Você clicou no botão')">Clique aqui</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
