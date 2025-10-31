@@ -40,3 +40,7 @@ code {
     display: inline;
     font-size: 5rem;
 }
+
+.dica {
+    color: brown;
+}
