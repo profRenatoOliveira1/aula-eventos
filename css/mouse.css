@@ -1,9 +1,13 @@
+table {
+    margin-top: 2rem;
+}
+
 td, th {
     border: 1px solid;
 }
 
 th {
-    background-color: darkgrey;
+    background-color: #a9a9a9;
 }
 
 code {
@@ -12,9 +16,27 @@ code {
 
 .exemplos {
     margin: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.onclick {
-    width: 500px;
-    height: 100px;
+.onclick, 
+.ondclick,
+.onmouseover {
+    width: 30vw;
+    height: 200px;
+
+    margin: 0.5rem;
+    border: 2px dotted;
+}
+
+.ondclick img {
+    width: 20%;
+}
+
+#evonmouseover {
+    display: inline;
+    font-size: 5rem;
 }

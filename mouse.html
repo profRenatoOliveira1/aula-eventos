@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#030303"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+    </a>
+
     <table>
         <thead>
             <tr>
@@ -35,22 +39,22 @@
                 <td>Destacar um botão</td>
             </tr>
             <tr>
-                <td><code>onmousein</code></td>
+                <td><code>onmouseenter</code></td>
                 <td>Quando o ponteiro do mouse entra no elemento</td>
                 <td>Destacar um botão</td>
             </tr>
             <tr>
-                <td><code>onmouseout</code></td>
+                <td><code>onmouseleave</code></td>
                 <td>Quando o ponteiro do mouse sai do elemento</td>
                 <td>Retirar destaque</td>
             </tr>
             <tr>
-                <td><code>onmousedown</code></td>
+                <td><code>mousedown</code></td>
                 <td>Quando o botão do mouse é pressionado</td>
                 <td>Iniciar um arraste de elemento</td>
             </tr>
             <tr>
-                <td><code>onmouseup</code></td>
+                <td><code>mouseup</code></td>
                 <td>Quando o botão do mouse é solto</td>
                 <td>Fim de um arraste</td>
             </tr>
@@ -61,10 +65,29 @@
         <div class="onclick">
             <p>Evento <code>onclick</code></p>
             <p>Clique para ver o que acontece</p>
-            <button onclick="alert('Você clicou no botão')">Clique aqui</button>
+            <button onclick="saudacoes()">Clique aqui</button>
+        </div>
+
+        <div class="ondclick">
+            <p>Evento <code>ondlclick</code></p>
+            <p>Dê um clique duplo na imagem para ver o que acontece</p>
+            <img src="/assets/double-click_403.png" alt="Double click" ondblclick="duploClique()">
+        </div>
+
+        <div class="onmouseover">
+            <p>Evento <code>onmouseenter</code> e <code>onmouseleave</code></p>
+            <p>Passe o mouse no emoji abaixo para ver o que acontece</p>
+            <p id="evonmouseover">🙈</p>
+        </div>
+
+        <div class="onmouseover">
+            <p>Evento <code>mousedown</code> e <code>mouseup</code></p>
+            <p>Passe o mouse no emoji abaixo para ver o que acontece</p>
+            <button id="btn-up-and-down">Clique aqui</button>
         </div>
     </div>
 
+    <script src="js/mouse.js"></script>
 </body>
 
 </html>
