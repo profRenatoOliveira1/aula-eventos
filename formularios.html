@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem de Marcação - Aula Eventos - Eventos de Mouse</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mouse.css">
+</head>
+
+<body>
+    <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#030303">
+            <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+        </svg>
+    </a>
+
+    <h1>Eventos de Formulário</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Evento</th>
+                <th>Quando é disparado</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>onfocus</code></td>
+                <td>Quando o campo ganha foco</td>
+                <td>Destacar campo ativo</td>
+            </tr>
+            <tr>
+                <td><code>onblur</code></td>
+                <td>Quando o campo perde foco</td>
+                <td>Validar o campo</td>
+            </tr>
+            <tr>
+                <td><code>onchange</code></td>
+                <td>Quando o valor do campo muda</td>
+                <td>Atualizar algo na tela</td>
+            </tr>
+            <tr>
+                <td><code>onsubmit</code></td>
+                <td>Quando o formulário é enviado</td>
+                <td>Validar antes de enviar</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="exemplos">
+        <form onsubmit="enviarFormulario(event)">
+            <p>Utilize o input abaixo</p>
+            <input type="text" id="nome" placeholder="Seu nome" onfocus="this.style.background='lightyellow'"
+                onblur="this.style.background='pink'" onchange="mostrarNome()">
+            <p id="saida-nome"></p>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <script>
+            function enviarFormulario(event) {
+                event.preventDefault(); // impede o envio real
+                alert("Formulário enviado!");
+            }
+
+            function mostrarNome() {
+                const nome = document.getElementById('nome').value;
+                const saida = document.getElementById('saida-nome');
+                saida.textContent = "Você digitou: " + nome;
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
