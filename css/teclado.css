@@ -1,0 +1,48 @@
+table {
+    margin-top: 2rem;
+}
+
+td, th {
+    border: 1px solid;
+}
+
+th {
+    background-color: #a9a9a9;
+}
+
+.exemplos {
+    margin: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.onkeydown,
+.onkeyup,
+.onkeypress {
+    width: 30vw;
+    height: 250px;
+
+    margin: 0.5rem;
+    border: 2px dotted;
+}
+
+h3 {
+    color: black;
+}
+
+.onkeydown input,
+.onkeyup input,
+.onkeypress input {
+    margin-left: 1rem;
+    width: 90%;
+}
+
+code {
+    background-color: darkgrey;
+}
+
+.dica {
+    color: brown;
+}

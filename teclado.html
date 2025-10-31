@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem de Marcação - Aula Eventos - Eventos de Teclado</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/teclado.css">
+</head>
+
+<body>
+    <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#030303">
+            <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+        </svg>
+    </a>
+
+    <h1>Eventos de Teclado</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Evento</th>
+                <th>Quando é disparado</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>onkeydown</code></td>
+                <td>Quando uma tecla é pressionada</td>
+                <td>Detectar atalho</td>
+            </tr>
+            <tr>
+                <td><code>onkeyup</code></td>
+                <td>Quando uma tecla é solta</td>
+                <td>Mostrar o que foi digitado</td>
+            </tr>
+            <tr>
+                <td><code>onkeypress</code></td>
+                <td>Quando uma tecla é pressionada e mantida</td>
+                <td>Validação de entrada</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="exemplos">
+
+        <div class="onkeydown">
+            <h3>Exemplo: <code>onkeydown</code></h3>
+            <p>Pressione qualquer teclado dentro do input para ver o que acontece</p>
+            <input type="text" id="evento-key-down" placeholder="Pressione qualquer tecla">
+            <p class="dica">Dica: mantenha a tecla pressionada por um tempo, depois solte para ver o que acontece.</p>
+        </div>
+
+        <div class="onkeyup">
+            <h3>Exemplo: <code>onkeyup</code></h3>
+            <p>Use o input abaixo par escrever um texto</p>
+            <input type="text" id="campo" placeholder="Digite algo">
+            <p id="saida"></p>
+
+            <p class="dica">Dica: mantenha a tecla pressionada por um tempo, depois solte para ver o que acontece.</p>
+        </div>
+
+        <div class="onkeypress">
+            <h3>Exemplo: <code>onkeypress</code></h3>
+            <p>Use o input abaixo par escrever um texto</p>
+            <input type="text" id="campo-keypress" placeholder="Digite algo">
+            <p id="saida-keypress"></p>
+        </div>
+    </div>
+
+    <script src="js/teclado.js"></script>
+</body>
+
+</html>
